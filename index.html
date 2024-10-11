@@ -1,7 +1,25 @@
-echo "# test-repository" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Zedrickf/test-repository.git
-git push -u origin main
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="screen1" class="screen active">
+        <h1>Juego del Ahorcado</h1>
+        <input type="text" id="word" placeholder="Escribe la palabra a adivinar" />
+        <button id="startGame">Iniciar Juego</button>
+        <button id="shareButton">Compartir</button>
+    </div>
+    
+    <div id="screen2" class="screen">
+        <h1>Juego en Progreso</h1>
+        <p id="hiddenWord"></p>
+        <!-- Aquí va el resto de tu lógica del juego -->
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
